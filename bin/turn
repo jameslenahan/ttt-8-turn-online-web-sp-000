@@ -5,4 +5,8 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
+<<<<<<< HEAD
 turn(board)
+=======
+
+>>>>>>> 221e61c3407b3d917be71816b989c9c3b8f77166

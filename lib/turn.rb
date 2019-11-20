@@ -9,9 +9,14 @@ end
 board = [" ", " ", " "]
 # code your input_to_index and move method here!
 
+<<<<<<< HEAD
 def input_to_index(move)
   index = move.to_i - 1
   return index
+=======
+def input_to_index(string)
+  string.to_i - 1
+>>>>>>> 221e61c3407b3d917be71816b989c9c3b8f77166
 end
   
 def move(board, index, value = "X")
@@ -42,6 +47,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
+<<<<<<< HEAD
   move = gets.chomp
   index = input_to_index(move)
   if valid_move?(board, index) == true
@@ -49,4 +55,9 @@ def turn(board)
     display_board(board)
   else turn(board)
   end
+=======
+  user_input = gets.split
+  index = input_to_index(user_input)
+  token = current_player(board)
+>>>>>>> 221e61c3407b3d917be71816b989c9c3b8f77166
 end
